@@ -27,8 +27,8 @@ const alien5 = new ship("Eorg", 5, 4, 0.6);
 
 
 
-
-function startGame() {
+// this function starts the game upon clicking
+function fightAlien1() {
 
     startBtn.addEventListener('click', () => {
         
@@ -38,10 +38,10 @@ function startGame() {
 
            console.log(alien1.hull);
             
-	         console.log('You score a direct hit on the alien!');
+	         console.log('You score a direct hit on the alien! Type fightAlien1(); to continue the fight!');
 
              if(alien1.hull <= 0) {
-                console.log("Alien1 destroyed! Retreat or fight next alien?")
+                console.log("Alien1 destroyed! You can retreat or type fightAlien2(); to fight next alien!")
             };
 
            }
@@ -72,7 +72,7 @@ function startGame() {
 
 // this function retreats
 function retreat (){
-    console.log('You retreat back to homebase, where you live to fight amother day.');
+    ('You retreat back to homebase, where you live to fight amother day.');
 }
 
 
@@ -87,14 +87,14 @@ function fightAlien2(){
         
     if(Math.random() < UssAssembly.accuracy) {
 
-        alien1.hull = alien2.hull - UssAssembly.firepower;
+        alien2.hull = alien2.hull - UssAssembly.firepower;
 
         console.log(alien2.hull);
          
           console.log('You score a direct hit on the alien!');
 
           if(alien2.hull <= 0) {
-             console.log("Alien2 destroyed! Retreat or fight next alien?")
+             console.log("Alien2 destroyed! You can retreat or type fightAlien3(); to fight next alien!")
          };
 
         }
@@ -111,12 +111,9 @@ function fightAlien2(){
                      console.log("You have been destroyed. Game Over!")
                  };
              }
-         }
- 
-         
-
-            
+         }        
 };
+
 
 
 
@@ -134,7 +131,7 @@ function fightAlien3(){
           console.log('You score a direct hit on the alien!');
 
           if(alien3.hull <= 0) {
-             console.log("Alien3 destroyed! Retreat or fight next alien?")
+             console.log("Alien3 destroyed! You can retreat or type fightAlien4(); to fight next alien!")
          };
 
         }
@@ -174,7 +171,7 @@ function fightAlien4(){
           console.log('You score a direct hit on the alien!');
 
           if(alien4.hull <= 0) {
-             console.log("Alien4 destroyed! Retreat or fight next alien?")
+             console.log("Alien4 destroyed! You can retreat or type fightAlien5(); to fight next alien!")
          };
 
         }
@@ -215,7 +212,7 @@ function fightAlien5(){
           console.log('You score a direct hit on the alien!');
 
           if(alien5.hull <= 0) {
-             console.log("Alien5 destroyed! Retreat or fight next alien?")
+             console.log("Alien5 destroyed! You have eliminated all aliens and won!")
          };
 
         }
@@ -236,4 +233,4 @@ function fightAlien5(){
  
          
 };
-startGame();
+fightAlien1();
