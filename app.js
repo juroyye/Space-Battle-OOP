@@ -79,13 +79,20 @@ function startGame() {
 
 
 
-
+// this function retreats
 function retreat (){
     console.log('You retreat back to homebase, where you live to fight amother day.');
 }
 
-function fight(){
-    console.log("You engage in combat wit the second alien ship!");
+
+
+
+
+
+
+// this function fights the second alien
+function fightAlien2(){
+    console.log("You engage in combat with the second alien ship!");
         
         if(Math.random() < UssAssembly.accuracy) {
 
@@ -93,6 +100,71 @@ function fight(){
            }
         else{
                 if(Math.random() < alien2.accuracy) {
+                    console.log('The alien has damaged your ship!')
+                }
+            }
+    
+            
+};
+
+
+
+
+// this function fights the third alien
+function fightAlien3(){
+    console.log("You engage in combat with the third alien ship!");
+        
+        if(Math.random() < UssAssembly.accuracy) {
+
+	         console.log('You score a direct hit on the alien!');
+           }
+        else{
+                if(Math.random() < alien3.accuracy) {
+                    console.log('The alien has damaged your ship!')
+                }
+            }
+    
+            
+};
+
+
+
+
+
+
+// this function fights the fourth alien
+function fightAlien4(){
+    console.log("You engage in combat with the fourth alien ship!");
+        
+        if(Math.random() < UssAssembly.accuracy) {
+
+	         console.log('You score a direct hit on the alien!');
+           }
+        else{
+                if(Math.random() < alien4.accuracy) {
+                    console.log('The alien has damaged your ship!')
+                }
+            }
+    
+            
+};
+
+
+
+
+
+
+
+// this function fights the fifth alien 
+function fightAlien5(){
+    console.log("You engage in combat with the fifth alien ship!");
+        
+        if(Math.random() < UssAssembly.accuracy) {
+
+	         console.log('You score a direct hit on the alien!');
+           }
+        else{
+                if(Math.random() < alien5.accuracy) {
                     console.log('The alien has damaged your ship!')
                 }
             }
